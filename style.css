@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    margin: 15px auto 15px auto ;
+}
+.nav-bars {
+    display: none;
+}
+.nav-bars img {
+    width: 40px;
+}
+nav {
+    display: flex;
+    gap: 40px;
+
+}
+nav a {
+     color: black;
+     font-weight: 600;
+}
+@media screen and (max-width:992px) {
+    nav {
+        display: none;
+    }
+    .nav-bars {
+        display: flex;
+    }
+}
