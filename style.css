@@ -1,6 +1,7 @@
 * {
     margin: 0;
     outline: none;
+    list-style-type: none;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -264,31 +265,134 @@ nav a {
     margin: auto;
 
     h2{
-        padding: 25px;
+        padding-top: 25px;
         font-size: 50px;
     }
     p {
         padding-top: 15px;
         font-size: 20px;
     }
+}
 
-    .boxs1 {
-       box-shadow: 2px 0 0 0 black;
+.main6 {
+    background-color: rgba(243, 233, 226, 1);
+    height: 23vh;
+    padding: 60px 0;
+
+    marquee{
+        font-size: 55px ;
     }
-    .boxs2 {
-        box-shadow: 2px 0 0 0 black;
+}
+
+.main7-boxs {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    align-content: center;
+    max-width: 85vw;
+    margin: 150px auto;
+    gap: 80px;
+
+
+    .box1 {
+    background-color: rgba(174, 232, 251, 1);
+    border-radius: 15px;
+    padding: 40px;
+    height: 56vh;
+
+
+    h2{
+        color: rgba(0, 0, 0, 1);
+        font-size: 55px;
+        font-weight: 400;
+        margin-bottom: 75px;
+    }
+    p {
+        color: rgba(0, 0, 0, 1);
+    }
+
+   .main7-button {
+           display: flex;
+           justify-content: end;
+    a{
+        color: rgba(0, 0, 0, 1);
+        border: 1px solid rgba(0, 0, 0, 1);
+        border-radius: 15px;
+        margin-top: 20px;
+        padding: 11px 15px;
+    }
+    }
      }
-}
+    .box2 {
+    background-color:rgba(243, 233, 226, 1) ;
+    border-radius: 15px;
+    padding: 40px;
+    height: 56vh;
 
 
+    h2{
+        color: rgba(255, 59, 65, 1);
+        font-size: 55px;
+        font-weight: 400;
+        margin-bottom: 75px;
+    }
 
+    p {
+        color: rgba(255, 59, 65, 1) ;
+    }
 
-@media screen and (max-width:576px) {
-}
+    .main7-button {
+        display: flex;
+        justify-content: end;
+ a{
+     color: rgba(255, 59, 65, 1);
+     border: 1px solid rgba(255, 59, 65, 1);
+     border-radius: 15px;
+     margin-top: 20px;
+     padding: 11px 15px;
+ }
+ }
+
+    }
+    .box3 {
+    background-color: rgba(255, 59, 65, 1);
+    border-radius: 15px;
+    padding: 40px;
+    height: 56vh;
+
+    h2{
+        color: rgba(243, 233, 226, 1);
+        font-size: 55px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+
+    p {
+        color: rgba(243, 233, 226, 1);
+    }
     
-@media screen and  (max-width:798px) {
-  
+    }
+
+    .main7-button {
+        display: flex;
+        justify-content: end;
+ a{
+     color: rgba(243, 233, 226, 1);
+     border: 1px solid rgba(243, 233, 226, 1);
+     border-radius: 15px;
+     margin-top: 20px;
+     padding: 11px 15px;
+ }
+ }
 }
+
+.main8 {
+    background: url(./image/5.png) no-repeat center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
 @media screen and (max-width:992px) {
     nav {
         display: none;
@@ -302,9 +406,6 @@ nav a {
         display: none;
     }
 }
-@media screen and (max-width:1400px) {
-}
-
 
 
 @media screen and (min-width:0px) and (max-width:576px) {
@@ -363,6 +464,25 @@ nav a {
             font-size: 24px;
         }
     }
+    .main7-boxs {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+
+
+        .box3 {
+
+            h2{
+                font-size: 40px;
+                width: 40vw;
+            }
+
+            p{
+                margin-top: 10px;
+                font-size: 17px;
+            }
+        }
+    }
+
 }
 @media screen and (min-width:577px) and (max-width:798px) {
     .head-main-text h1 {
@@ -420,6 +540,50 @@ nav a {
             font-size: 24px;
         }
     }
+    .main7-boxs {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+
+        .box3 {
+
+            h2{
+                width: 20vw;
+            }
+        }
+    }
+
+    .main7-boxs {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+
+        .box1 {
+            p{
+                width: 80vw;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+        .box2 {
+            p{
+                width: 80vw;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+        .box3 {
+
+            h2{
+                font-size: 60px;
+                width: 40vw;
+            }
+
+            p{
+                margin-top: 10px;
+                font-size: 20px;
+            }
+        }
+    }
 
 }
 @media screen and (min-width:799px) and (max-width:992px) {
@@ -455,6 +619,18 @@ nav a {
         h2 {
             width: 66vw;
             font-size: 24px;
+        }
+    }
+    .main7-boxs {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+
+        .box3 {
+
+            h2{
+                width: 20vw;
+            }
         }
     }
 
@@ -501,6 +677,19 @@ nav a {
         h2 {
             width: 66vw;
             font-size: 28px;
+        }
+    }
+
+    .main7-boxs {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+
+        .box3 {
+
+            h2{
+                width: 20vw;
+            }
         }
     }
 }
