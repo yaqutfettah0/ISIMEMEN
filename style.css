@@ -147,7 +147,12 @@ nav a {
     margin: 100px auto 80px auto;
     text-align: center;
 
-
+  img{
+    transition: 0.3s all ease;
+ }
+  img:hover {
+    transform: rotate(1.04);
+ }
     .box1 {
         background-color: rgba(174, 232, 251, 1);
         border-radius: 15px;
@@ -208,8 +213,14 @@ nav a {
      a {
         color: rgba(0, 0, 0, 1);
         border: 1px solid black;
+        transition: 0.5s all ease;
         border-radius: 13px;
         padding: 11px 16px;
+    }
+    a:hover {
+        color: white;
+        background-color: black;
+        transform: rotate(1);
     }
     }
 }
@@ -317,9 +328,16 @@ nav a {
     a{
         color: rgba(0, 0, 0, 1);
         border: 1px solid rgba(0, 0, 0, 1);
+        transition: 0.5s all ease;
         border-radius: 15px;
         margin-top: 20px;
         padding: 11px 15px;
+    }
+    a:hover {
+        color: white;
+        border: 1px solid white;
+        background-color: black;
+        transform: rotate(1);
     }
     }
      }
@@ -347,10 +365,17 @@ nav a {
  a{
      color: rgba(255, 59, 65, 1);
      border: 1px solid rgba(255, 59, 65, 1);
+     transition: 0.5s all ease;
      border-radius: 15px;
      margin-top: 20px;
      padding: 11px 15px;
  }
+ a:hover {
+    transform: rotate(1);
+    border: 1px solid rgba(255, 59, 65, 1) ;
+    background-color: rgba(255, 59, 65, 1);
+    color: rgba(243, 233, 226, 1);
+    }
  }
 
     }
@@ -379,12 +404,20 @@ nav a {
  a{
      color: rgba(243, 233, 226, 1);
      border: 1px solid rgba(243, 233, 226, 1);
+     transition: 0.5s all ease;
      border-radius: 15px;
      margin-top: 20px;
      padding: 11px 15px;
  }
+    a:hover {
+    transform: rotate(1);
+    border: 1px solid rgba(243, 233, 226, 1) ;
+    background-color: rgba(243, 233, 226, 1);
+    color: rgba(255, 59, 65, 1);
+    }
  }
 }
+
 
 .main8 {
     background: url(./image/5.png) no-repeat center;
